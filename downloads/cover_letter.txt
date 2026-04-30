@@ -1,0 +1,19 @@
+Ayesha Shahzad
+London, United Kingdom
+Email: ayeshashahzad156@hotmail.com
+
+Dear Hiring Manager,
+
+I am writing to express my keen interest in opportunities that lie at the intersection of data science, health care and research. With a distinctive blend of professional business experience and a recently completed Master’s degree in Data Science (with Distinction) from Kingston University, I have developed the technical expertise, analytical mindset and drive to turn data into meaningful insights.
+
+My background has given me a comprehensive foundation in designing databases, building analytical pipelines and communicating findings to diverse audiences. Through my MSc projects I engineered relational database systems, developed data warehouses, designed and evaluated classical machine‑learning and deep‑learning models, and orchestrated cloud‑based ETL workflows. I also explored complex datasets in critical care, healthcare operations and employee satisfaction, applying rigorous statistical tests and visual analytics to uncover patterns and improve decision‑making.
+
+Beyond technical skills, I bring resilience, curiosity and empathy. I returned to formal education after a decade of professional work, demonstrating my commitment to lifelong learning. Having grown up in Pakistan and lived across the UK, Europe and the Middle East, I appreciate diverse cultures and believe that data‑driven solutions should serve society. My approach is grounded in collaboration: I enjoy engaging with stakeholders, understanding their challenges and translating technical results into practical recommendations.
+
+I am open to roles in data science, health analytics, research, business intelligence or any field where my analytical capabilities and cross‑cultural experience can add value. I am particularly interested in working on projects that contribute to human well‑being and where I can leave a positive mark.
+
+Thank you for considering my application. I would welcome the opportunity to discuss how my skills and experiences align with your needs.
+
+Sincerely,
+
+Ayesha Shahzad
