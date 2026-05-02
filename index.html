@@ -1,142 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ayesha Shahzad - Data Scientist Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayesha Shahzad | Data Scientist</title>
+    <meta name="description" content="Portfolio of data scientist Ayesha Shahzad showcasing deep learning, generative AI and analytics projects.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <h1>Ayesha Shahzad</h1>
-    <p class="tagline">Passionate about data, humanity & continuous learning</p>
-  </header>
+    <!-- Header with navigation -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Ayesha&nbsp;Shahzad</h1>
+                <p class="tagline">Data Scientist&nbsp;|&nbsp;Deep Learning, Generative AI &amp; Analytics</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#downloads">Downloads</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#professional">Professional Summary</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#philosophy">Philosophy</a></li>
-      <li><a href="#travel">Travel & Culture</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Hero section -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h2>Hello, I’m Ayesha</h2>
+                <p>I transform raw data into actionable insight. With a passion for deep learning, generative AI and classical machine learning, I build solutions that make a difference.</p>
+                <a class="button" href="#downloads">Get my CV</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/profile.png" alt="Professional portrait" />
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Born in Pakistan and now based in the United Kingdom, I have travelled across Switzerland, Germany, France, Belgium, Luxembourg, the United Arab Emirates and many cities in Pakistan. I cherish local cultures and believe in a simple, ordinary life built on humanity. I laugh easily and believe that a smile is the best gift you can give.</p>
-    <p>I completed my MSc in Data Science with Distinction at Kingston University after a ten‑year gap in formal education, demonstrating my dedication and ability to excel when pursuing what I love.</p>
-  </section>
+    <!-- About section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a data scientist with a knack for turning numbers into narratives. After earning a Master of Science in Data Science with distinction from Kingston University, I have been exploring how generative models can transform glioblastoma histopathology. My expertise spans deep learning, generative AI, classical machine learning and statistical analysis. I thrive on solving real‑world problems across healthcare, finance, aviation, public safety and workforce analytics.</p>
+            <p>Beyond the technical, I draw on over a decade of professional experience in customer service and management. This blend of skills helps me bridge the gap between sophisticated analysis and clear business impact. Whether I’m building a data warehouse or training a neural network, my goal is always the same: to deliver insights that matter.</p>
+        </div>
+    </section>
 
-  <section id="professional">
-    <h2>Professional Summary</h2>
-    <p>I am a data scientist with a passion for health data, research and evidence‑based decision making. My professional background spans business and analytics roles, and I am eager to apply my skills in any opportunity ranging from data science and analytics to research, business intelligence and healthcare. My projects showcase my ability to design databases, build predictive models, perform exploratory data analysis, develop ETL pipelines and communicate insights effectively.</p>
-  </section>
+    <!-- Professional summary -->
+    <section id="summary" class="section">
+        <div class="container">
+            <h2>Professional Summary</h2>
+            <p>I work fluently with Python (PyTorch, Keras, Scikit‑learn, Pandas), R, SQL, Tableau, Power&nbsp;BI and AWS Glue. I design robust data pipelines, train and optimise predictive models and communicate findings through clear visualisations and dashboards. My background has fostered leadership, teamwork and communication skills that complement my analytical expertise.</p>
+        </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>The following projects demonstrate my technical skills and collaborative experiences. Each project includes space for images and links to source code on GitHub.</p>
+    <!-- Projects section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Key Projects</h2>
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>Generative AI for Virtual Staining</h3>
+                <p>Developed a bidirectional virtual staining system to translate between ISH and H&E images. Thousands of image patches were extracted and models were evaluated with FID, SSIM and PSNR. The unpaired CycleGAN model achieved the most realistic output and preserved tissue morphology.</p>
+                <p><a href="https://github.com/Ayesha-code-arch/generative-learning-applied-on-the-ivygap-medical-imaging-data" target="_blank" rel="noopener">View on GitHub</a></p>
+                <div id="project1-gallery" class="gallery"></div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Royal Anchor Shipping Database System</h3>
+                <p>Designed a comprehensive 22‑table relational database using Oracle&nbsp;APEX for a global shipping company. Modelled routes, vessels, containers, cargo and crew. Implemented primary and foreign key constraints, triggers and validation rules, and wrote SQL queries for cargo tracking and crew compliance.</p>
+                <p><a href="https://github.com/Ayesha-code-arch/royal-anchor-shipping-database" target="_blank" rel="noopener">View on GitHub</a></p>
+                <div id="project2-gallery" class="gallery"></div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project">
+                <h3>UK Airport Punctuality Data Warehouse</h3>
+                <p>Built a star‑schema data warehouse to analyse flight punctuality across UK airports. Integrated tens of thousands of flight records, cleaned and normalised the data and developed Tableau dashboards to explore delays, cancellations and route performance.</p>
+                <p><a href="https://github.com/Ayesha-code-arch/uk-airport-punctuality-data-warehouse" target="_blank" rel="noopener">View on GitHub</a></p>
+                <div id="project3-gallery" class="gallery"></div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project">
+                <h3>Montgomery County Crime Analysis</h3>
+                <p>Analysed more than 306&nbsp;000 crime records from 2016–2022 using Python. Cleaned data, engineered temporal and spatial features, applied K‑Means clustering and produced visualisations revealing post‑COVID declines, crime hotspots and temporal patterns.</p>
+                <p><a href="https://github.com/Ayesha-code-arch/montgomery-crime-eda" target="_blank" rel="noopener">View on GitHub</a></p>
+                <div id="project4-gallery" class="gallery"></div>
+            </div>
+            <!-- Project 5 -->
+            <div class="project">
+                <h3>Digit Classification with Classical Machine Learning</h3>
+                <p>Trained and compared eight classifiers on the Scikit‑learn digits dataset. Hyper‑parameter tuning produced a support vector machine with balanced accuracy of about 98.6&nbsp;percent and ROC&nbsp;AUC of 99.9&nbsp;percent. Performance was evaluated using confusion matrices and ROC curves.</p>
+                <p><a href="https://github.com/Ayesha-code-arch/digit-classification-ml" target="_blank" rel="noopener">View on GitHub</a></p>
+                <div id="project5-gallery" class="gallery"></div>
+            </div>
+            <!-- Project 6 -->
+            <div class="project">
+                <h3>Financial Forecasting with Deep Learning</h3>
+                <p>Built LSTM, GRU, CNN‑LSTM and dense models in Keras to forecast Starbucks stock prices. Used sliding‑window sequences and scaling; the CNN‑LSTM hybrid achieved a test R² of approximately 0.889. Predictions were plotted against actual prices to assess performance.</p>
+                <p><a href="https://github.com/Ayesha-code-arch/financial-forecasting-cnn-lstm" target="_blank" rel="noopener">View on GitHub</a></p>
+                <div id="project6-gallery" class="gallery"></div>
+            </div>
+            <!-- Project 7 -->
+            <div class="project">
+                <h3>AWS Glue ETL Lab</h3>
+                <p>Performed ETL on the GHCN‑D dataset using AWS Glue, Athena and CloudFormation. Created Glue crawlers, cleaned and converted data to Parquet, wrote Athena queries and deployed a reusable template with appropriate IAM policies.</p>
+                <p><a href="https://github.com/Ayesha-code-arch/aws-glue-etl-lab" target="_blank" rel="noopener">View on GitHub</a></p>
+                <div id="project7-gallery" class="gallery"></div>
+            </div>
+            <!-- Project 8 -->
+            <div class="project">
+                <h3>Wine &amp; Hip Fracture Regression Models</h3>
+                <p>Implemented multiple linear regression to predict red wine quality (R²&nbsp;≈&nbsp;0.32) and logistic regression to assess hip fracture risk. Improved the AUC from 0.909 to 0.926 by incorporating height and medication variables.</p>
+                <p><a href="https://github.com/Ayesha-code-arch/wine-hip-fracture-regression" target="_blank" rel="noopener">View on GitHub</a></p>
+                <div id="project8-gallery" class="gallery"></div>
+            </div>
+            <!-- Project 9 -->
+            <div class="project">
+                <h3>Support2 EDA for Critical Care</h3>
+                <p>Explored the SUPPORT2 dataset (9 105 patients and 48 variables) to understand patient outcomes. Assessed missingness, outliers, distributions, correlations and variable cleaning, identifying strong relationships between severity scores and mortality.</p>
+                <p><a href="https://github.com/Ayesha-code-arch/support2-eda" target="_blank" rel="noopener">View on GitHub</a></p>
+                <div id="project9-gallery" class="gallery"></div>
+            </div>
+            <!-- Project 10 -->
+            <div class="project">
+                <h3>Employee Pay &amp; Satisfaction Analysis</h3>
+                <p>Investigated salary and satisfaction data for 1 470 employees using R. Conducted correlation analysis, t‑tests, ANOVA and chi‑squared tests. Found moderate correlation between pay and satisfaction and no significant gender pay gap.</p>
+                <p><a href="https://github.com/Ayesha-code-arch/employee-pay-satisfaction-analysis" target="_blank" rel="noopener">View on GitHub</a></p>
+                <div id="project10-gallery" class="gallery"></div>
+            </div>
+        </div>
+    </section>
 
-    <div class="project">
-      <h3>Generative AI for Histopathological Image Synthesis</h3>
-      <p>Developed CycleGAN and diffusion models to translate between H&E and in‑situ hybridisation slides of glioblastoma. Achieved low Fréchet Inception Distance and preserved tissue morphology.</p>
-      <p><strong>Repository:</strong> <a href="https://github.com/Ayesha-code-arch/generative-learning-applied-on-the-ivygap-medical-imaging-data" target="_blank">GitHub</a></p>
-      <div class="gallery"></div>
-    </div>
+    <!-- Philosophy section -->
+    <section id="philosophy" class="section">
+        <div class="container">
+            <h2>Quotes &amp; Philosophy</h2>
+            <p>I believe that life is short; enjoy it before it is too late. There is no time to complain; time is money. Live and let live. Learning never finishes: even on your last day you should remain curious or risk becoming mentally stagnant. I strive to keep a humble, joyful outlook: seriousness in action balanced with a light heart and a ready smile.</p>
+        </div>
+    </section>
 
-    <div class="project">
-      <h3>Employee Pay & Satisfaction Analysis</h3>
-      <p>Analysed salary, satisfaction and demographics for 1,470 employees. Performed correlation analysis, t‑tests, ANOVA and chi‑squared tests using R. Visualised key relationships and found no significant gender pay gap.</p>
-      <p><strong>Repository:</strong> <a href="https://github.com/Ayesha-code-arch/employee-pay-satisfaction-analysis" target="_blank">GitHub</a></p>
-      <div class="gallery"></div>
-    </div>
+    <!-- Travel & culture section -->
+    <section id="culture" class="section">
+        <div class="container">
+            <h2>Travel &amp; Culture</h2>
+            <p>I have had the privilege of travelling widely, exploring cultures across Switzerland, Germany, France, Belgium, Luxembourg, Dubai, Abu Dhabi and Qatar. I grew up in Pakistan and have lived for many years in the United Kingdom, with visits to Ireland and numerous Pakistani cities. These experiences have strengthened my appreciation for local traditions, simple living and the importance of humanity over material wealth. I believe in embracing ordinary joys rather than chasing lavish lifestyles and respect people who value kindness and empathy.</p>
+        </div>
+    </section>
 
-    <div class="project">
-      <h3>Exploratory Data Analysis of Montgomery County Crime</h3>
-      <p>Cleaned and analysed more than 300k crime incident records from Montgomery County (2016–2022). Engineered temporal and spatial features, mapped hotspots and explored trends using Python visualisations.</p>
-      <p><strong>Repository:</strong> <a href="https://github.com/Ayesha-code-arch/montgomery-crime-eda" target="_blank">GitHub</a></p>
-      <div class="gallery"></div>
-    </div>
+    <!-- Opportunities section -->
+    <section id="opportunities" class="section">
+        <div class="container">
+            <h2>Opportunities</h2>
+            <p>I am open to opportunities in health data, research roles, PhD programmes, business analysis and any position where a data scientist can make an impact. After a decade of professional experience outside formal studies, my return to academia reignited my passion for data science. Earning a distinction despite this gap demonstrates my commitment and ability to learn quickly. I utilise AI responsibly to support coding and analysis, always understanding the algorithms and their implications. Ultimately I want to leave a positive mark and contribute to work that benefits humanity.</p>
+        </div>
+    </section>
 
-    <div class="project">
-      <h3>Digit Classification with Classical Machine Learning</h3>
-      <p>Compared eight algorithms on the scikit‑learn digits dataset, using grid search for hyper‑parameter tuning. Achieved 98.6% balanced accuracy and 99.9% macro ROC AUC with a tuned Support Vector Machine.</p>
-      <p><strong>Repository:</strong> <a href="https://github.com/Ayesha-code-arch/digit-classification-ml" target="_blank">GitHub</a></p>
-      <div class="gallery"></div>
-    </div>
+    <!-- Contact section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:ayeshashahzad156@hotmail.com">ayeshashahzad156@hotmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/ayesha-shahzad" target="_blank" rel="noopener">linkedin.com/in/ayesha-shahzad</a></li>
+                <li>GitHub: <a href="https://github.com/Ayesha-code-arch" target="_blank" rel="noopener">github.com/Ayesha-code-arch</a></li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="project">
-      <h3>UK Airport Punctuality Data Warehouse</h3>
-      <p>Designed and built a star‑schema data warehouse integrating 24 monthly flight statistics for 2023–2024. Developed SQL scripts to clean, integrate and load the data and created Tableau dashboards highlighting delays, cancellations and punctuality trends.</p>
-      <p><strong>Repository:</strong> <a href="https://github.com/Ayesha-code-arch/uk-airport-punctuality-data-warehouse" target="_blank">GitHub</a></p>
-      <div class="gallery"></div>
-    </div>
+    <!-- Downloads section -->
+    <section id="downloads" class="section">
+        <div class="container">
+            <h2>Downloads</h2>
+            <ul class="downloads-list">
+                <!-- The files are stored in the root of the repository rather than in a downloads subfolder -->
+                <li><a href="Ayesha_Shahzad_CV.pdf" download>Download CV (PDF)</a></li>
+                <li><a href="Ayesha_Shahzad_Cover_Letter.txt" download>Download Cover Letter (TXT)</a></li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="project">
-      <h3>Royal Anchor Shipping Database System</h3>
-      <p>Designed a 22‑table relational database to manage vessel scheduling, cargo tracking, bookings and crew operations. Enforced data integrity with primary keys, foreign keys and triggers, and implemented complex queries for reporting.</p>
-      <p><strong>Repository:</strong> <a href="https://github.com/Ayesha-code-arch/royal-anchor-shipping-database" target="_blank">GitHub</a></p>
-      <div class="gallery"></div>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ayesha Shahzad. All rights reserved.</p>
+        </div>
+    </footer>
 
-    <div class="project">
-      <h3>Deep Learning for Real‑Time Financial Forecasting</h3>
-      <p>Built and compared LSTM, GRU, CNN‑LSTM hybrid and dense networks to forecast Starbucks share prices. The CNN‑LSTM model achieved an R² of approximately 0.889 on the test set.</p>
-      <p><strong>Repository:</strong> <a href="https://github.com/Ayesha-code-arch/financial-forecasting-cnn-lstm" target="_blank">GitHub</a></p>
-      <div class="gallery"></div>
-    </div>
-
-    <div class="project">
-      <h3>AWS Glue ETL Lab</h3>
-      <p>Automated an ETL workflow on the GHCN‑D climate dataset using AWS Glue, Athena, CloudFormation and IAM. Created crawlers, Parquet tables and reusable infrastructure templates.</p>
-      <p><strong>Repository:</strong> <a href="https://github.com/Ayesha-code-arch/aws-glue-etl-lab" target="_blank">GitHub</a></p>
-      <div class="gallery"></div>
-    </div>
-
-    <div class="project">
-      <h3>Wine & Hip Fracture Regression Models</h3>
-      <p>Performed linear regression to model red wine quality and logistic regression to predict hip fracture risk. Explained around 32% of variance in wine quality and achieved AUC up to 0.926 for hip fracture prediction.</p>
-      <p><strong>Repository:</strong> <a href="https://github.com/Ayesha-code-arch/wine-hip-fracture-regression" target="_blank">GitHub</a></p>
-      <div class="gallery"></div>
-    </div>
-
-    <div class="project">
-      <h3>Support2 EDA for Critical Care Analysis</h3>
-      <p>Explored the SUPPORT2 dataset of 9,105 patients and 48 variables: assessed missingness, outliers, descriptive statistics, correlations and variable coding. Produced insights on severity scores and outcomes.</p>
-      <p><strong>Repository:</strong> <a href="https://github.com/Ayesha-code-arch/support2-eda" target="_blank">GitHub</a></p>
-      <div class="gallery"></div>
-    </div>
-
-  </section>
-
-  <section id="philosophy">
-    <h2>My Philosophy & Quotes</h2>
-    <ul>
-      <li>Life is short; enjoy it before it’s too late.</li>
-      <li>There is no time to complain; time is money.</li>
-      <li>Live and let others live.</li>
-      <li>No one here will take money or titles to the grave.</li>
-      <li>Learning never finishes; stay curious or become mentally dead.</li>
-    </ul>
-  </section>
-
-  <section id="travel">
-    <h2>Travel & Culture</h2>
-    <p>I love experiencing new cultures and places. From strolling along Lake Geneva and the cobbled streets of Paris to exploring the modern skylines of Dubai and the historical sites of Lahore, travel broadens my perspective and inspires my work.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact & Opportunities</h2>
-    <p>I am open to opportunities in health data, research, data science, business analytics and related roles. If you have an opportunity or want to collaborate, please get in touch.</p>
-    <p>Email: <a href="mailto:ayeshashahzad156@hotmail.com">ayeshashahzad156@hotmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/" target="_blank">My LinkedIn</a></p>
-    <p>Downloads: <a href="downloads/generated_cv.pdf" target="_blank">My CV</a> | <a href="downloads/cover_letter.txt" target="_blank">Cover letter</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Ayesha Shahzad. Built with love and curiosity.</p>
-  </footer>
-
+    <!-- Gallery loader script -->
+    <script>
+    // Automatically load up to nine images from each project folder
+    document.addEventListener('DOMContentLoaded', () => {
+        for (let i = 1; i <= 10; i++) {
+            const galleryId = `project${i}-gallery`;
+            const gallery = document.getElementById(galleryId);
+            if (!gallery) continue;
+            for (let j = 1; j <= 9; j++) {
+                const img = new Image();
+                img.src = `images/project${i}/${j}.jpg`;
+                img.alt = `Project ${i} image ${j}`;
+                img.onerror = () => { img.remove(); };
+                gallery.appendChild(img);
+            }
+        }
+    });
+    </script>
 </body>
 </html>

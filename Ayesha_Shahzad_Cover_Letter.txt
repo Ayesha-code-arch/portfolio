@@ -1,0 +1,15 @@
+Dear Hiring Manager,
+
+I am writing to express my interest in data science and analytics roles within your organisation. I recently earned a Master of Science in Data Science with distinction from Kingston University, London. My research focused on developing generative models to translate between histopathological modalities, demonstrating my ability to innovate in complex, high‑dimensional domains.
+
+Throughout my studies and professional experience I have built relational databases, data warehouses and ETL pipelines; trained and optimised machine‑learning and deep‑learning models; conducted exploratory analyses and regression modelling; and created interactive dashboards. My skills include Python, R, SQL, Tableau, Power BI and AWS Glue, allowing me to take projects from raw data through to actionable insights.
+
+Beyond technical expertise, my background in customer service and management has honed my communication, leadership and client‑focused approach. I enjoy collaborating with diverse stakeholders to understand their needs and deliver solutions that add value.
+
+I am passionate about applying cutting‑edge techniques to solve real‑world problems, particularly in healthcare, finance, aviation and public safety. I believe that continuous learning and curiosity are vital, and I strive to deliver rigorous, ethical analyses that make a positive impact. I would welcome the opportunity to discuss how my skills and experience can contribute to your team’s goals.
+
+Thank you for considering my application.
+
+Yours sincerely,
+
+Ayesha Shahzad
