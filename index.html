@@ -19,6 +19,8 @@
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <!-- Added link to new visualisations page -->
+                    <li><a href="visualisations.html">Visualisations</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#downloads">Downloads</a></li>
                 </ul>
@@ -46,6 +48,7 @@
         <div class="container">
             <h2>About Me</h2>
             <p>I am a data scientist with a knack for turning numbers into narratives. After earning a Master of Science in Data Science with distinction from Kingston University, I have been exploring how generative models can transform glioblastoma histopathology. My expertise spans deep learning, generative AI, classical machine learning and statistical analysis. I thrive on solving real‑world problems across healthcare, finance, aviation, public safety and workforce analytics.</p>
+            <p>Originally from Pakistan, I have made the United Kingdom my home for more than ten years. This cross‑cultural perspective, coupled with extensive travel across Europe and the Middle&nbsp;East, informs both my work ethic and my worldview.</p>
             <p>Beyond the technical, I draw on over a decade of professional experience in customer service and management. This blend of skills helps me bridge the gap between sophisticated analysis and clear business impact. Whether I’m building a data warehouse or training a neural network, my goal is always the same: to deliver insights that matter.</p>
         </div>
     </section>
@@ -147,7 +150,7 @@
     <section id="culture" class="section">
         <div class="container">
             <h2>Travel &amp; Culture</h2>
-            <p>I have had the privilege of travelling widely, exploring cultures across Switzerland, Germany, France, Belgium, Luxembourg, Dubai, Abu Dhabi and Qatar. I grew up in Pakistan and have lived for many years in the United Kingdom, with visits to Ireland and numerous Pakistani cities. These experiences have strengthened my appreciation for local traditions, simple living and the importance of humanity over material wealth. I believe in embracing ordinary joys rather than chasing lavish lifestyles and respect people who value kindness and empathy.</p>
+            <p>I have had the privilege of travelling widely, exploring cultures across Switzerland, Germany, France, Belgium, Luxembourg, Dubai, Abu&nbsp;Dhabi and Qatar. I grew up in Pakistan and have called the United Kingdom home for more than a decade, with travel across England, Scotland, Wales (including Cardiff) and Ireland as well as visits to numerous Pakistani cities. These experiences have strengthened my appreciation for local traditions, simple living and the importance of humanity over material wealth. I believe in embracing ordinary joys rather than chasing lavish lifestyles and respect people who value kindness and empathy.</p>
         </div>
     </section>
 
@@ -165,7 +168,10 @@
             <h2>Contact Me</h2>
             <ul class="contact-list">
                 <li>Email: <a href="mailto:ayeshashahzad156@hotmail.com">ayeshashahzad156@hotmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/ayesha-shahzad" target="_blank" rel="noopener">linkedin.com/in/ayesha-shahzad</a></li>
+                <!-- Added phone contact -->
+                <li>Phone: <a href="tel:+447453536565">+44&nbsp;7453&nbsp;536565</a></li>
+                <!-- Updated LinkedIn URL to the correct profile -->
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/ayesha-shahzad-pleaseclick" target="_blank" rel="noopener">linkedin.com/in/ayesha-shahzad-pleaseclick</a></li>
                 <li>GitHub: <a href="https://github.com/Ayesha-code-arch" target="_blank" rel="noopener">github.com/Ayesha-code-arch</a></li>
             </ul>
         </div>
@@ -176,9 +182,10 @@
         <div class="container">
             <h2>Downloads</h2>
             <ul class="downloads-list">
-                <!-- The files are stored in the root of the repository rather than in a downloads subfolder -->
+                <!-- Downloads available in multiple formats -->
                 <li><a href="Ayesha_Shahzad_CV.pdf" download>Download CV (PDF)</a></li>
-                <li><a href="Ayesha_Shahzad_Cover_Letter.txt" download>Download Cover Letter (TXT)</a></li>
+                <li><a href="Ayesha_Shahzad_Cover_Letter.pdf" download>Download Cover Letter (PDF)</a></li>
+                <li><a href="Ayesha_Shahzad_Cover_Letter.docx" download>Download Cover Letter (Word)</a></li>
             </ul>
         </div>
     </section>
@@ -192,15 +199,28 @@
 
     <!-- Gallery loader script -->
     <script>
-    // Automatically load up to nine images from each project folder
+    /**
+     * Dynamically load project images.
+     *
+     * For projects with images, specify the number of images in the
+     * `projectImageCounts` map. Images are stored in the repository root
+     * using the naming convention `projectX_Y.jpg` where X is the project
+     * number (1-based) and Y is the image index starting at 1. When the
+     * document loads, the script appends the appropriate `<img>` elements
+     * to each gallery container. If a specific image does not exist or fails
+     * to load, the `onerror` handler removes it from the DOM. Projects
+     * without entries in `projectImageCounts` will have empty galleries.
+     */
     document.addEventListener('DOMContentLoaded', () => {
+        const projectImageCounts = {1: 2, 8: 3};
         for (let i = 1; i <= 10; i++) {
             const galleryId = `project${i}-gallery`;
             const gallery = document.getElementById(galleryId);
             if (!gallery) continue;
-            for (let j = 1; j <= 9; j++) {
+            const count = projectImageCounts[i] || 0;
+            for (let j = 1; j <= count; j++) {
                 const img = new Image();
-                img.src = `images/project${i}/${j}.jpg`;
+                img.src = `project${i}_${j}.jpg`;
                 img.alt = `Project ${i} image ${j}`;
                 img.onerror = () => { img.remove(); };
                 gallery.appendChild(img);
